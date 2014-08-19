@@ -1,0 +1,23 @@
+#notifslist, #notifslist a:link, #notifslist a:visited {
+    color: white;
+}
+
+#notifslist {
+    clear: both;
+}
+
+#notifslist li {
+    overflow: hidden;
+    line-height: 3em;
+    list-style-type: none;
+}
+
+#notifslist li a:not(.button) {
+    display: block;
+}
+
+#notifslist li.title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

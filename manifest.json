@@ -1,0 +1,61 @@
+{
+    "name": "Movim",
+    "id": "movim",
+    "description": {
+        "en": "The Kickass Social Network",
+    },
+    "license": "AGPLv3",
+    "developer": {
+        "name": "roust",
+        "email": "roust@moncoindu.net",
+        "url": "https://moncoindu.net"
+    },
+    "multi_instance": "true",
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "ask": {
+                    "en": "Choose a domain for Movim",
+		    "fr": "Choisissez un domaine pour Movim"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "ask": {
+                    "en": "Choose a path for Movim",
+		    "fr": "Choisissez un chemin pour Movim"
+                },
+                "example": "/movim",
+                "default": "/movim"
+            }
+	    {
+		"name": "admin",
+		"ask": {
+		"en": "Choose the Movim administrator (must be an existing YunoHost user)",
+		"fr": "Administrateur du site (doit être un utilisateur YunoHost existant)"
+		},
+		"example": "homer"
+	    },
+	    {
+		"name": "language",
+		"ask": {
+		"en": "Choose the language of the Wordpress site",
+		"fr": "Choissisez la langue de Movim"
+		},
+		"choices": ["en_EN", "fr_FR"],
+		"default": "en_EN"
+	    },
+	    {
+		"name": "public_site",
+		"ask": {
+		"en": "Is it a public Wordpress site ?",
+		"fr": "Est-ce un site public ?"
+		},
+		"choices": ["Yes", "No"],
+		"default": "Yes"
+	    }
+        ]
+    }
+}

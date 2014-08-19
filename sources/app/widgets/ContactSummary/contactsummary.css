@@ -1,0 +1,30 @@
+#contactsummary {
+    background-color: rgba(20, 20, 20, 0.5);
+    line-height: 1.5em;
+    padding-bottom: 1rem;
+}
+
+#contactsummary h1 {
+    color: white;
+    line-height: 1.5em;
+}
+
+
+#contactsummary a.avatar {
+    width: 100%;
+    padding-bottom: 100%;
+    display: block;
+    background-size: 100%;
+}
+
+#contactsummary a.url {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}

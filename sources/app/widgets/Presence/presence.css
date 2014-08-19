@@ -1,0 +1,72 @@
+#logout {
+    font-size: 1em;
+    color: #ccc;
+}
+
+#logout .online     { background-image: url(img/online.svg); }
+#logout .away       { background-image: url(img/away.svg); }
+#logout .dnd        { background-image: url(img/dnd.svg); }
+#logout .xa         { background-image: url(img/xa.svg); }
+#logout .disconnect { background-image: url(img/exit.svg); text-decoration: none;}
+
+#logouttab {
+	top: 0px;
+	cursor: pointer;
+    z-index: 5;
+    line-height: 3em;
+    background-repeat: no-repeat;
+    background-position: 1em center;
+    color: white;
+    width: 7em;
+
+    transition: background 1s;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#logouttab, #logoutlist {
+    position: fixed;
+    right: 15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 3em;
+    padding-right: 1em;
+    background-size: 16px 16px;
+}
+
+#logouttab:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#logoutlist {
+    top: -100%;
+    transition: top 0.5s ease;
+    z-index: 1;
+    background-color: rgba(20, 20, 20, 0.9);
+    width: 10em;
+}
+
+#logoutlist.show {
+    top: 3em;
+}
+
+#logoutlist a {
+    display: block;
+    line-height: 3em;
+    background-repeat: no-repeat;
+    background-position: 1em center;
+    background-size: 16px 16px;
+    padding-left: 3em;
+    padding-right: 1em;
+    margin-left: -3em;
+    margin-right: -1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+}
+
+#logoutlist a:hover {
+    cursor: pointer; 
+    background-color: rgba(0, 0, 0, 0.1);
+}

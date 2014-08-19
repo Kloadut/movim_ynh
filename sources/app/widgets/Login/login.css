@@ -1,0 +1,131 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 28em;
+    padding-right: 0px;
+}
+
+#content {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#loginpage {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    
+    background-image: url(img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center 1em;
+    background-size: 74% auto;
+    padding-top: 33%;
+
+    margin-top: 40%;
+}
+
+#loginpage .admin {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    padding: 1em;
+}
+
+#loginpage .admin a:link,
+#loginpage .admin a:visited {
+    color: white;
+}
+
+#loginpage form {
+    box-shadow: 0 0.1em 0px rgba(0, 0, 0, 0.2);
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.1em;
+}
+
+#loginpage form .create span {
+    color: white;
+    padding: 0 1em;
+    line-height: 2em;
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+
+#loginpage form .element {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-height: 0;
+}
+
+#loginpage form > .element:not(:first-child) {
+    padding-top: 0.5em;
+}
+/*
+#loginpage form .element.login {
+    min-height: 0em;
+}
+*/
+#loginpage form .element input:not([type=submit]) {
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#loginpage form .element input[type=submit] {
+    border-color: transparent;
+}
+
+#loginpage .infos {
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
+
+#loginpage #loginhelp {
+    list-style-type: none;
+    color: white;
+    line-height: 1.2em;
+    text-align: justify;
+    transition: height 0.5s ease;
+    height: 0em;
+    overflow: hidden;
+}
+
+#loginpage #loginhelp li {
+    min-height: 2.5em;
+    background-repeat: no-repeat;
+    background-image: url(img/beaker.png);
+    padding-left: 2.5em;
+    background-position: 0.2em center;
+    margin: 0.5em 0em;
+}
+
+#loginpage form:hover > #loginhelp {
+    height: 11.5em;
+}
+
+#loginpage #loginhelp li#jabber { background-image: url(img/jabber.png); }
+#loginpage #loginhelp li#gmail { background-image: url(img/envelope.png); }
+#loginpage #loginhelp li#facebook { background-image: url(img/facebook.png); }
+
+footer {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #loginpage {
+        background-size: 80% auto;
+    }
+
+    #loginhelp,
+    #loginpage form .create span {
+        display: none;
+    }
+}
+

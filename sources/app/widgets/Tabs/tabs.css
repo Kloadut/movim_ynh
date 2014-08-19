@@ -1,0 +1,49 @@
+#navtabs {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#navtabs li {
+    display: inline-block;
+    cursor: pointer;
+
+    padding: 0em 2em;
+    white-space: nowrap;
+
+    transition: background 0.5s;
+}
+#navtabs li a{
+    display: block; 
+    line-height: 3em;
+    width:100%;
+    color: white;
+    text-decoration: none;
+}
+
+#navtabs li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#navtabs li.on {
+    background-color: white;
+}
+
+#navtabs li.on a {
+    color: #445157;    
+}
+
+.tabelem{
+    position: relative;
+}
+
+.fixed_block{ 
+    background-color: white; 
+    width: 880px;
+}
+
+.anchor{
+    display: block;
+    position: absolute;
+}
